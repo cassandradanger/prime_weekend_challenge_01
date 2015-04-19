@@ -5,47 +5,49 @@
 	<meta name="description" content="Prime Weekend Challenge 1">
 	<meta name="author" content="Casie Lynch">
 	<title>Dungeon and Dragons stat recording app</title>
-	<link rel="stylesheet" href="stylesheet.css">
-	<script type="text/javascript" script src="javascript.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" script src="app.js"></script>
 </head>
 <body>
-	<label for="name">Name: </label>
-	<br/>
-	<label for="strength">Strength: </label>
-	<br/>
-	<label for="dexterity">Dexterity: </label>
-	<br/>
-	<label for="constitution">Constitution: </label>
-	<br/>
-	<label for="wisdom">Wisdom: </label>
-	<br/>
-	<label for="intelligence">Intelligence: </label>
-	<br/>
-	<label for="charisma">Charisma: </label>
-	<br/>
-	<label for="class">Player Class (Optional) </label>
-	<br/>
+	<form>
+		<label>Name: <input type="text" id="name" name="Name" /></label>
+		<br/>
+		<label>Strength: <input type="text" id="strength" name="Strength" /></label>
+		<br/>
+		<label>Dexterity: <input type="text" id="dexterity" name="Dexterity" /></label>
+		<br/>
+		<label>Constitution: <input type="text" id="constitution" name="Constitution"  /></label>
+		<br/>
+		<label>Wisdom: <input type="text" id="wisdom" name="Wisdom" /></label>
+		<br/>
+		<label>Intelligence: <input type="text" id="intelligence" name="Intelligence" /></label>
+		<br/>
+		<label>Charisma: <input type="text" id="charisma" name="Charisma" /></label>
+		<br/>
+		<label>Player Class (Optional) : 
+			<input type="radio" name="none" value="none">None
+			<input type="radio" name="cleric" value="cleric">Cleric
+			<input type="radio" name="fighter" value="fighter">Fighter
+			<input type="radio" name="rogue" value="rogue">Rogue
+			<input type="radio" name="wizard" value="wizard">Wizard
+		</label>
+		<br/>
+		<input type="submit" value="Add Player/Monster to Records"></input>
+		<br/>
+		<br/>
+		<br/>
+	</form>
 
-	<label>Name: <input type="text" id="name" /></label>
-	<br/>
-	<label>Strength: <input type="text" id="strength" /></label>
-	<br/>
-	<label>Dexterity: <input type="text" id="dexterity" /></label>
-	<br/>
-	<label>Constitution: <input type="text" id="constitution" /></label>
-	<br/>
-	<label>Wisdom: <input type="text" id="wisdom" /></label>
-	<br/>
-	<label>Intelligence: <input type="text" id="intelligence" /></label>
-	<br/>
-	<label>Charisma: <input type="text" id="charisma" /></label>
-	<br/>
-	<label>Player Class (Optional) : <input type="text" id="class" /></label>
-	<br/>
-	<button type="button">Add Player/Monster to Records<input type="text" id="addMonster" /></button>
-	<br/>
-	<table border="1" style="width:100%">
-	  <tr>
+
+
+
+
+
+<!--displays new players/monsters-->
+
+
+<table border="1" style="width:100%">
+	<tr>
 	    <th>Name</th>
 	    <th>Strength</th>
 	    <th>Dexterity</th>
