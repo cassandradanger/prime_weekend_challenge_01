@@ -6,9 +6,21 @@
 	<meta name="author" content="Casie Lynch">
 	<title>Dungeon and Dragons stat recording app</title>
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" script src="app.js"></script>
+	
 </head>
+
 <body>
+	<form id = "info">
+		Name: <input id="nameInput" type = "text" name = "name" value = ""><br/>
+		Strength: <input id="strInput" type = "text" name = "strength" value =""><br/>
+		<input type = "submit" id = "submitButton" value = "Submit" >
+	</form>
+
+	<p id = "demo"></p>
+
+	<script type="text/javascript" script src="app.js"></script>
+
+	<!--
 	<form>
 		<label>Name: <input type="text" id="name" name="Name" /></label>
 		<br/>
@@ -37,113 +49,154 @@
 		<br/>
 		<br/>
 	</form>
-
-
-
-
-
-
+	-->
 <!--displays new players/monsters-->
 
-
-<table border="1" style="width:100%">
-	<tr>
-	    <th>Name</th>
-	    <th>Strength</th>
-	    <th>Dexterity</th>
-	    <th>Constitution</th>
-	    <th>Wisdom</th>
-	    <th>Intelligence</th>
-	    <th>Charisma</th>
-	    <th>Player Class (optional)</th>
-	  </tr>
-	  <tr>
-	  	<td>1</td>
-	  	<td>1</td>
-	  	<td>1</td>
-	  	<td>1</td>
-	  	<td>1</td>
-	  	<td>1</td>
-	  	<td>1</td>
-	  	<td>1</td>
-	  </tr>
-	  <tr>
-	  	<td>2</td>
-	  	<td>2</td>
-	  	<td>2</td>
-	  	<td>2</td>
-	  	<td>2</td>
-	  	<td>2</td>
-	  	<td>2</td>
-	  	<td>2</td>
-	  </tr>
-	  <tr>
-	  	<td>3</td>
-	  	<td>3</td>
-	  	<td>3</td>
-	  	<td>3</td>
-	  	<td>3</td>
-	  	<td>3</td>
-	  	<td>3</td>
-	  	<td>3</td>
-	  </tr>
-	  <tr>
-	  	<td>4</td>
-	  	<td>4</td>
-	  	<td>4</td>
-	  	<td>4</td>
-	  	<td>4</td>
-	  	<td>4</td>
-	  	<td>4</td>
-	  	<td>4</td>
-	  </tr>
-	  <tr>
-	  	<td>5</td>
-	  	<td>5</td>
-	  	<td>5</td>
-	  	<td>5</td>
-	  	<td>5</td>
-	  	<td>5</td>
-	  	<td>5</td>
-	  	<td>5</td>
-	  </tr>
-	  <tr>
-	  	<td>6</td>
-	  	<td>6</td>
-	  	<td>6</td>
-	  	<td>6</td>
-	  	<td>6</td>
-	  	<td>6</td>
-	  	<td>6</td>
-	  	<td>6</td>
-	  </tr>
-	  <tr>
-	  	<td>7</td>
-	  	<td>7</td>
-	  	<td>7</td>
-	  	<td>7</td>
-	  	<td>7</td>
-	  	<td>7</td>
-	  	<td>7</td>
-	  	<td>7</td>
-	  </tr>
-	  <tr>
-	  	<td>8</td>
-	  	<td>8</td>
-	  	<td>8</td>
-	  	<td>8</td>
-	  	<td>8</td>
-	  	<td>8</td>
-	  	<td>8</td>
-	  	<td>8</td>
-	  </tr>
-	</table>
-
+<!--
+	<table border="1" style="width:100%">
+		<tr>
+		    <th>Name</th>
+		    <th>Strength</th>
+		    <th>Dexterity</th>
+		    <th>Constitution</th>
+		    <th>Wisdom</th>
+		    <th>Intelligence</th>
+		    <th>Charisma</th>
+		    <th>Player Class (optional)</th>
+		  </tr>
+		  <tr>
+		  	<td>1</td>
+		  	<td>1</td>
+		  	<td>1</td>
+		  	<td>1</td>
+		  	<td>1</td>
+		  	<td>1</td>
+		  	<td>1</td>
+		  	<td>1</td>
+		  </tr>
+		  <tr>
+		  	<td>2</td>
+		  	<td>2</td>
+		  	<td>2</td>
+		  	<td>2</td>
+		  	<td>2</td>
+		  	<td>2</td>
+		  	<td>2</td>
+		  	<td>2</td>
+		  </tr>
+		  <tr>
+		  	<td>3</td>
+		  	<td>3</td>
+		  	<td>3</td>
+		  	<td>3</td>
+		  	<td>3</td>
+		  	<td>3</td>
+		  	<td>3</td>
+		  	<td>3</td>
+		  </tr>
+		  <tr>
+		  	<td>4</td>
+		  	<td>4</td>
+		  	<td>4</td>
+		  	<td>4</td>
+		  	<td>4</td>
+		  	<td>4</td>
+		  	<td>4</td>
+		  	<td>4</td>
+		  </tr>
+		  <tr>
+		  	<td>5</td>
+		  	<td>5</td>
+		  	<td>5</td>
+		  	<td>5</td>
+		  	<td>5</td>
+		  	<td>5</td>
+		  	<td>5</td>
+		  	<td>5</td>
+		  </tr>
+		  <tr>
+		  	<td>6</td>
+		  	<td>6</td>
+		  	<td>6</td>
+		  	<td>6</td>
+		  	<td>6</td>
+		  	<td>6</td>
+		  	<td>6</td>
+		  	<td>6</td>
+		  </tr>
+		  <tr>
+		  	<td>7</td>
+		  	<td>7</td>
+		  	<td>7</td>
+		  	<td>7</td>
+		  	<td>7</td>
+		  	<td>7</td>
+		  	<td>7</td>
+		  	<td>7</td>
+		  </tr>
+		  <tr>
+		  	<td>8</td>
+		  	<td>8</td>
+		  	<td>8</td>
+		  	<td>8</td>
+		  	<td>8</td>
+		  	<td>8</td>
+		  	<td>8</td>
+		  	<td>8</td>
+		  </tr>
+		</table>
+-->
 
 
 
 <!--
 <label>Name: <input type="text" id="name" name="Name" /></label>
 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

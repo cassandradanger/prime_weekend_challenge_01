@@ -31,18 +31,91 @@ player.playerClass = "What?";
 */
 
 
-function Monster(name, strength, dexterity, constitution, wisdom, intelligence, charisma, playerClass) {
-	this.name = document.getElementById('name');
-	this.strength = document.getElementById('strength');
-	this.dexterity = document.getElementById('dexterity');
-	this.constitution = document.getElementById('constitution');
-	this.wisdom = document.getElementById('wisdom');
-	this.intelligence = document.getElementById('intelligence');
-	this.charisma = document.getElementById('charisma')
+/*function Monster(name, strength, dexterity, constitution, wisdom, intelligence, charisma) {
+	this.name = name;
+	this.strength = strength;
+	this.dexterity = dexterity;
+	this.constitution = constitution;
+	this.wisdom = wisdom;
+	this.intelligence = intelligence;
+	this.charisma = charisma
+}
+
+document.getElementId('addMonster').addEventListener('click', )
+console.log(document.getElementById('name').value);
+
+var player = new Monster(document.getElementById('name').value, document.getElementById('strength').value, 
+	document.getElementById('dexterity').value, document.getElementById('constitution').value, document.getElementById('wisdom').value,
+	 document.getElementById('intelligence').value, document.getElementById('charisma').value );
+
+
+var storageArray = [];
+*/
+
+console.log("Yes");
+
+document.getElementById("submitButton").addEventListener("click", myFunction);
+
+function Monster(name, str){
+	this.name = name;
+	this.str = str;
+}
+
+function myFunction(event){
+	event.preventDefault();
+	console.log("I am here!")
+	var nameInput = document.getElementById("nameInput").value;
+	var strengthInput = document.getElementById("strInput").value;
+	
+	//var newMonster = new Monster(nameInput, strengthInput){};
+
+
+	document.getElementById("demo").innerHTML = newMonster.name + " has a strength of: " + strengthInput;
+
+	var text = "";
+	//var i;
+	/*for (i = 0; i < x.length; i++){
+		text += x.elements[i].value + "<br>"; 
+		}
+		document.getElementById("demo").innerHTML = text;
+	}*/
+
 }
 
 
-console.log(Monster.name);
 
-storageArray = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
