@@ -56,21 +56,25 @@ console.log("Yes");
 
 document.getElementById("submitButton").addEventListener("click", myFunction);
 
-function Monster(name, str){
-	this.name = name;
-	this.str = str;
-}
-
 function myFunction(event){
 	event.preventDefault();
 	console.log("I am here!")
 	var nameInput = document.getElementById("nameInput").value;
-	var strengthInput = document.getElementById("strInput").value;
-	
-	//var newMonster = new Monster(nameInput, strengthInput){};
+	var strengthInput = document.getElementById("strengthInput").value;
+	var dexterityInput = document.getElementById("dexterityInput").value;
+	var constitutionInput = document.getElementById("constitutionInput").value;
+	var wisdomInput = document.getElementById("wisdomInput").value;
+	var intelInput = document.getElementById("intelInput").value;
+	var charismaInput = document.getElementById("charismaInput").value;
 
 
-	document.getElementById("demo").innerHTML = newMonster.name + " has a strength of: " + strengthInput;
+	document.getElementById("one").innerHTML = nameInput;
+	document.getElementById("two").innerHTML = strengthInput;
+	document.getElementById("three").innerHTML = dexterityInput;
+	document.getElementById("four").innerHTML = constitutionInput;
+	document.getElementById("five").innerHTML = wisdomInput;
+	document.getElementById("six").innerHTML = intelInput;
+	document.getElementById("seven").innerHTML = charismaInput;
 
 	var text = "";
 	//var i;
